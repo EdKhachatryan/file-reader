@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@file-reader/home": ["home/src/index.ts"]
+      "@file-reader/feature-file-uploader": [
+        "libs/feature-file-uploader/src/index.ts"
+      ],
+      "@file-reader/home": ["home/src/index.ts"],
+      "@file-reader/ui-styles": ["libs/ui-styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

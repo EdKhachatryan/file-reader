@@ -1,0 +1,24 @@
+{
+    "projectType": "library",
+    "root": "libs/web/ui-styles",
+    "sourceRoot": "libs/web/ui-styles/src",
+    "prefix": "baza",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/web/ui-styles"],
+            "options": {
+                "jestConfig": "libs/web/ui-styles/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/web/ui-styles/src/**/*.ts", "libs/web/ui-styles/src/**/*.html"]
+            },
+            "outputs": ["{options.outputFile}"]
+        }
+    },
+    "tags": []
+}
